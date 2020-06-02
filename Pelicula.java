@@ -28,6 +28,15 @@ public class Pelicula extends ProductoMultimedia
 
     public double getPrecio(){
         double precio = 0;
+        if(getCalidad().equals("FullHD")){
+            precio = 10;
+        }
+        else{
+            precio = 5;
+        }
+        if(getAno() < 2000){
+            precio = (precio * 0.50);
+        }
         return precio;
     }
 }

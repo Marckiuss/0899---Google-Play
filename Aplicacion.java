@@ -42,6 +42,23 @@ public class Aplicacion extends Producto
     
     public double getPrecio(){
         double precio = 0;
+        if(getVecesComprado() >= 2){
+            if(getCategoria().equals("Juegos")){
+                precio = 5;
+            }
+            if(getCategoria().equals("Comunicaciones")){
+                precio = 2;
+            }
+            if(getCategoria().equals("Productividad")){
+                precio = 10;
+            }
+            if(getCategoria().equals("Multimedia")){
+                precio = 2;
+            }
+        }
+        else{
+            precio = 0.99;
+        }
         return precio;
     }
 }
