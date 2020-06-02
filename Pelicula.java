@@ -17,6 +17,12 @@ public class Pelicula extends ProductoMultimedia
     }
 
     public String getCalidad(){
+        if(resolucion == 1080){
+            resolucionHD = "FullHD";
+        }
+        else{
+            resolucionHD = "HD";
+        }
         return resolucionHD;
     }
 

@@ -20,6 +20,23 @@ public class Aplicacion extends Producto
 
     public String getCategoria(){
         String categ = "";
+        switch(categoria.toString()){
+            case "JUEGOS": 
+            categ = "Juegos"; 
+            break;
+
+            case "COMUNICACIONES": 
+            categ = "Comunicaciones"; 
+            break;
+
+            case "PRODUCTIVIDAD": 
+            categ = "Productividad"; 
+            break;
+
+            case "MULTIMEDIA": 
+            categ = "Multimedia"; 
+            break;
+        }
         return categ;
     }
     
